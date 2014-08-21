@@ -9,6 +9,6 @@
 - name: install
   apt:
     name: "{{ item }}"
-    state: present
+    state: latest
   with_items: latest_git_install
   tags: [configuration, latest-git, latest-git-install]
