@@ -3,7 +3,7 @@
 - name: add repository from PPA and install its signing key
   apt_repository:
     repo: 'ppa:git-core/ppa'
-    update_cache: yes
+    update_cache: true
   tags: [configuration, latest-git, latest-git-add-repository]
 
 - name: install
