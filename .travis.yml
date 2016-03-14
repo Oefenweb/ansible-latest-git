@@ -44,7 +44,7 @@ before_install:
   - sudo apt-get update -qq
 
   # Remove git
-  - sudo apt-get remove --purge git
+  - sudo apt-get remove --purge --yes git
 
 install:
   # Install Ansible.
