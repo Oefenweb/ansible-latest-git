@@ -4,11 +4,17 @@
   apt_repository:
     repo: 'ppa:git-core/ppa'
     update_cache: true
-  tags: [configuration, latest-git, latest-git-add-repository]
+  tags:
+    - configuration
+    - latest-git
+    - latest-git-add-repository
 
 - name: install
   apt:
     name: "{{ item }}"
-    state: latest
-  with_items: latest_git_install
-  tags: [configuration, latest-git, latest-git-install]
+    state: "{{ apt_install_state | default('latest') }}"
+  with_items: "{{ latest_git_dependencies }}"
+  tags:
+    - configuration
+    - latest-git
+    - latest-git-install
