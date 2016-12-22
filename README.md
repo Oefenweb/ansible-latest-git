@@ -1,6 +1,6 @@
 ## latest-git
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-latest-git.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-latest-git) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-latest--git-blue.svg)](https://galaxy.ansible.com/list#/roles/1403)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-latest-git.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-latest-git) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-latest--git-blue.svg)](https://galaxy.ansible.com/tersmitten/latest-git)
 
 Set up the latest version of git in Ubuntu systems.
 
@@ -22,7 +22,7 @@ None
 ---
 - hosts: all
   roles:
-  - latest-git
+    - latest-git
 ```
 
 #### License
