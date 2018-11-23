@@ -11,9 +11,8 @@
 
 - name: install
   apt:
-    name: "{{ item }}"
+    name: "{{ latest_git_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
-  with_items: "{{ latest_git_dependencies }}"
   tags:
     - configuration
     - latest-git
