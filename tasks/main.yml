@@ -4,6 +4,7 @@
   apt_repository:
     repo: 'ppa:git-core/ppa'
     update_cache: true
+    mode: 0644
   tags:
     - configuration
     - latest-git
