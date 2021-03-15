@@ -1,4 +1,4 @@
-# test file for latest-git
+# test file
 ---
 - hosts: localhost
   connection: local

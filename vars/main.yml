@@ -1,4 +1,4 @@
-# vars file for latest-git
+# vars file
 ---
 latest_git_dependencies:
   - git
