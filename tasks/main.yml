@@ -1,19 +1,12 @@
 # tasks file
 ---
-- name: add repository from PPA and install its signing key
-  apt_repository:
-    repo: 'ppa:git-core/ppa'
-    update_cache: true
-    mode: 0644
+- include: repository.yml
   tags:
     - configuration
     - latest-git
-    - latest-git-add-repository
+    - latest-git-repository
 
-- name: install
-  apt:
-    name: "{{ latest_git_dependencies }}"
-    state: "{{ apt_install_state | default('latest') }}"
+- include: install.yml
   tags:
     - configuration
     - latest-git

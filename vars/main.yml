@@ -1,4 +1,8 @@
 # vars file
 ---
+latest_git_dependencies_pre:
+  - software-properties-common
+  - dirmngr
+
 latest_git_dependencies:
   - git

@@ -1,7 +1,7 @@
 ## latest-git
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-latest-git.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-latest-git)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-latest--git-blue.svg)](https://galaxy.ansible.com/Oefenweb/latest-git)
+[![CI](https://github.com/Oefenweb/ansible-latest-git/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-latest-git/actions?query=workflow%3ACI)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-latest--git-blue.svg)](https://galaxy.ansible.com/Oefenweb/latest_git)
 
 Set up the latest version of git in Ubuntu systems.
 
