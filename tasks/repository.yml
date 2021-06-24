@@ -2,12 +2,12 @@
 ---
 - name: repository | dependencies
   apt:
-    name: "{{ insync_dependencies_pre }}"
+    name: "{{ latest_git_dependencies_pre }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
   tags:
-    - insync-repository-dependencies
+    - latest-git-repository-dependencies
 
 - name: repository | add
   apt_repository:
@@ -15,4 +15,4 @@
     update_cache: true
     mode: 0644
   tags:
-    - insync-repository-add
+    - latest-git-repository-add

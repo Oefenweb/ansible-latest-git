@@ -3,11 +3,11 @@
 - include: repository.yml
   tags:
     - configuration
-    - insync
-    - insync-repository
+    - latest-git
+    - latest-git-repository
 
 - include: install.yml
   tags:
     - configuration
-    - insync
-    - insync-install
+    - latest-git
+    - latest-git-install

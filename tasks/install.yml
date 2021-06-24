@@ -5,4 +5,4 @@
     name: "{{ latest_git_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
   tags:
-    - insync-install-dependencies
+    - latest-git-install-dependencies
