@@ -1,7 +1,7 @@
 # tasks file
 ---
-- name: repository | dependencies
-  apt:
+- name: repository | dependencies  # noqa args[module]
+  ansible.builtin.apt:
     name: "{{ latest_git_dependencies_pre }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
@@ -10,7 +10,7 @@
     - latest-git-repository-dependencies
 
 - name: repository | add
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: 'ppa:git-core/ppa'
     update_cache: true
     mode: 0644
