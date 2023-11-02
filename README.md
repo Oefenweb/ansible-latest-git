@@ -23,7 +23,7 @@ None
 ---
 - hosts: all
   roles:
-    - latest-git
+    - oefenweb.latest-git
 ```
 
 #### License
