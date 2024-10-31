@@ -3,6 +3,7 @@
 latest_git_dependencies_pre:
   - software-properties-common
   - dirmngr
+  - gpg-agent
 
 latest_git_dependencies:
   - git
