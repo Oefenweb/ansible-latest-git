@@ -6,8 +6,9 @@
 Set up the latest version of git in Ubuntu systems.
 
 #### Requirements
-
-* `python-apt`
+* `software-properties-common` (will be installed)
+* `dirmngr` (will be installed)
+* `apt-transport-https` (will be installed)
 
 #### Variables
 
