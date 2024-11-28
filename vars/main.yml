@@ -1,9 +1,28 @@
 # vars file
 ---
+latest_git_keyring_id: F911AB184317630C59970973E363C90F8F1B6217
+latest_git_keyring_dst: /usr/share/keyrings/git-core.gpg
+latest_git_repositories:
+  - type: "deb [signed-by={{ latest_git_keyring_dst }}]"
+    url: "https://ppa.launchpadcontent.net/git-core/ppa/{{ ansible_distribution | lower }} {{ ansible_distribution_release }}"
+    component: main
+  - type: deb
+    url: "https://ppa.launchpadcontent.net/git-core/ppa/{{ ansible_distribution | lower }} {{ ansible_distribution_release }}"
+    component: main
+    state: absent
+  - type: deb
+    url: "https://ppa.launchpad.net/git-core/ppa/{{ ansible_distribution | lower }} {{ ansible_distribution_release }}"
+    component: main
+    state: absent
+  - type: deb
+    url: "http://ppa.launchpad.net/git-core/ppa/{{ ansible_distribution | lower }} {{ ansible_distribution_release }}"
+    component: main
+    state: absent
+
 latest_git_dependencies_pre:
   - software-properties-common
   - dirmngr
-  - gpg-agent
+  - apt-transport-https
 
 latest_git_dependencies:
   - git
