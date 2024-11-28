@@ -32,9 +32,7 @@
   ansible.builtin.file:
     path: "{{ item }}"
     state: absent
-  with_items:
-    - "/etc/apt/sources.list.d/ppa_git_core_ppa_{{ ansible_distribution_release }}.list"
-    - "/etc/apt/sources.list.d/ppa_git_core_ppa_{{ ansible_distribution_release }}.list.save"
+  with_items: "{{ latest_git_repository_files_absent }}"
   tags:
     - latest-git-repository-cleanup
 
